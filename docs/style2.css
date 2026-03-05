@@ -1,0 +1,167 @@
+body{
+    background-color: black;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 30px;
+    margin: 0px;
+
+}
+
+hr{
+    position: absolute;
+    width: 3500px;
+    height: 5px;
+    margin-top: 90px;
+    color: white;
+    margin-left: -40px;
+    background-color: white;
+}
+
+a{
+    color: white;
+}
+h1{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+}
+
+.exit img{
+    position: absolute;
+    width: 260px;
+    margin-left: 1150px;
+    margin-top: -30px;
+}
+
+
+#captureArea {
+    display: inline-block;
+    text-align: left;
+    background: black; /* matches your drawing background */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  #captureArea hr {
+    border: 1px solid white;
+    width: 51%;
+    margin-top: 60px;
+    margin-left: 0px;
+  }
+  
+  #captureArea h1 {
+    margin-top: -30px 0;
+    font-family: sans-serif;
+  }
+  
+  #captureArea canvas {
+    display: block;
+    margin-top: -60px;
+    box-shadow: 0 0 10px rgba(56, 56, 56);
+    border-radius: 1px;
+
+  }
+  
+
+
+.tools{
+    margin-top: -380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    margin-right: 260px;
+}
+
+.color-and-range{
+    display: flex;
+    align-items: left;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 200px;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.tools .color-field{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50%;
+
+}
+
+.tools .button, #saveScreenshot {
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    background: black;
+    font-weight: bold;
+    font-size: 40px;
+    height: 70px;
+}   
+
+.tools .button{
+    width: 150px;
+    margin: 10px;
+}
+
+#saveScreenshot{
+    width: 325px;
+    margin: 10px 0 0 10px;
+}
+
+.pen-range{
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+    appearance: slider-vertical;
+    width: 30px;
+    height: 180px;
+    cursor: pointer;
+    align-self: left;
+}
+
+/* Track - Chrome, Safari, Edge */
+.pen-range::-webkit-slider-runnable-track {
+    width: 20px;
+    height: 180%;
+    background: rgb(97, 97, 97); /* track color */
+    border-radius: 10px;
+  }
+  
+  /* Thumb - Chrome, Safari, Edge */
+  .pen-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: red; /* thumb color */
+    border-radius: 50%;
+    margin-left: 0px;
+    cursor: grab;
+    margin-top: 0px; /* center thumb on track */
+  }
+
+
+.color-options{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: left;
+
+}
+
+
+
+

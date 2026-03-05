@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvasbelowtheconcrete.mta</title>
+    <link rel="stylesheet" href="style2.css"> 
+</head>
+<body>
+    <a href="index.html">
+    <div class="exit"><img src="exit.jpg"></div>
+</a>
+<div class="back">
+    <hr>
+</div>
+    <div id="captureArea">
+        <hr>
+        <h1>Van Cortlandt - <br> 242 St</h1>
+        <canvas id="canvas"></canvas>
+    </div>
+        <div class="tools">
+            <div class="color-and-range">
+                <div class="colors">
+                    <div onClick="change_color(this)" class="color-field" style="background: rgb(255, 0, 0);"></div>
+                    <div onClick="change_color(this)" class="color-field" style="background: white;"></div>
+                </div>
+            
+                <input type="range" min="1" max="100" class="pen-range"
+                onInput ="draw_width = this.value">
+
+            </div>
+               
+
+            <div class="button-section">
+                <button onClick="undo_last()" type="button" class="button">UNDO</button>
+                <button onClick="clear_canvas()" type="button" class="button">CLEAR</button>
+                <br>
+                <button id="saveScreenshot">SAVE</button>
+            </div>
+    </div>
+
+    <script src="1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+</body>
+</html>
